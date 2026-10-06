@@ -51,23 +51,33 @@ Testar se os fiéis estão dispostos a preencher um formulário de personalizaç
 
 ## 📝 5. O Mega Prompt Utilizado no Lovable
 
-O prompt em Markdown desenhado para a construção do MVP no Lovable encontra-se no arquivo [`docs/mega-prompt-lovable.md`](docs/mega-prompt-lovable.md) e abaixo:
+O prompt em Markdown desenhado para a construção do MVP no Lovable encontra-se no arquivo `docs/mega-prompt-lovable.md` e sintetizado abaixo:
 
-```markdown
-# Mega Prompt: Santo Hábito
+**Prompt do Projeto Santo Hábito:**
+> Crie uma aplicação web responsiva chamada "Santo Hábito", voltada para ajudar fiéis católicos a manterem uma rotina diária de oração.
+> 
+> **Identidade Visual:**
+> - Cores: Azul Marinho (#1A2B4C), Dourado (#D4AF37), Off-White (#F8F9FA).
+> - Vibe: Acolhedora, espiritual, organizada e minimalista.
+> 
+> **Funcionalidades Principais:**
+> 1. Landing Page: Explicativa sobre o impacto do hábito diário de oração com botão para "Montar Meu Plano Espiritual".
+> 2. Formulário de Personalização: Nome, E-mail, WhatsApp, Plano Desejado (Liturgia Diária, Santo do Dia, Consagração, Terço) e Horário de Preferência. Salva no banco de dados e redireciona para o WhatsApp com os dados preenchidos.
+> 3. Painel Admin (/admin): Tabela de leads com filtros por plano/horário, status do usuário e métricas de inscritos.
 
-Crie uma aplicação web responsiva chamada "Santo Hábito", voltada para ajudar fiéis católicos a manterem uma rotina diária de oração.
+---
 
-## Identidade Visual
-- Cores: Azul Marinho (#1A2B4C), Dourado (#D4AF37), Off-White (#F8F9FA).
-- Vibe: Acolhedora, espiritual, organizada e minimalista.
+## 🔄 6. Prompts de Correção e Ajustes (Iteração)
 
-## Funcionalidades Principais
-1. **Landing Page:** Explicativa sobre o impacto do hábito diário de oração com botão para "Montar Meu Plano Espiritual".
-2. **Formulário de Personalização:**
-   - Campos: Nome, E-mail, WhatsApp, Plano Desejado (Liturgia Diária, Santo do Dia, Consagração, Terço) e Horário de Preferência.
-   - Ação: Salva no Lovable Cloud e redireciona para o WhatsApp com os dados preenchidos.
-3. **Painel Admin (`/admin`):**
-   - Tabela de leads com filtros por plano e horário.
-   - Status do usuário (Pendente, Ativo, Inativo).
-   - Métricas de inscritos totais e plano mais popular.
+Durante a fase de testes da tese, os seguintes prompts de correção foram mapeados para refinamento no Lovable:
+
+- **Correção 1 (Máscara e Redirecionamento):** "Ajuste o campo de WhatsApp para incluir o código de país +55 e formate a mensagem automática para enviar no WhatsApp com os campos do formulário organizados em tópicos."
+- **Correção 2 (Painel Admin):** "Adicione um botão 'Enviar Mensagem' ao lado de cada registro no painel `/admin` que abra a conversa do WhatsApp do lead diretamente."
+
+---
+
+## 🌐 7. Link da Aplicação e Repositório
+
+- **Aplicação Publicada (GitHub Pages):** [https://oliweira.github.io/santo-habito-mvp/](https://oliweira.github.io/santo-habito-mvp/)
+- **Repositório do Código (GitHub):** [https://github.com/oliweira/santo-habito-mvp](https://github.com/oliweira/santo-habito-mvp)
+- **Documentação do Projeto:** Veja os arquivos na pasta [`/docs`](docs/)
